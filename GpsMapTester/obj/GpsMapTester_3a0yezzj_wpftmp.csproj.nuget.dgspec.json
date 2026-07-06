@@ -1,0 +1,91 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Project\\4. GPS\\GpsMapTester\\GpsMapTester\\GpsMapTester.csproj": {}
+  },
+  "projects": {
+    "C:\\Project\\4. GPS\\GpsMapTester\\GpsMapTester\\GpsMapTester.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Project\\4. GPS\\GpsMapTester\\GpsMapTester\\GpsMapTester.csproj",
+        "projectName": "GpsMapTester",
+        "projectPath": "C:\\Project\\4. GPS\\GpsMapTester\\GpsMapTester\\GpsMapTester.csproj",
+        "packagesPath": "C:\\Users\\klmon\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\4. GPS\\GpsMapTester\\GpsMapTester\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\klmon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/abtsoftware-bleeding-edge/api/": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "DevExpress.Images": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Mvvm": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Wpf.Core": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "DevExpress.Wpf.ThemesLW": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
+            "GMap.NET.WinPresentation": {
+              "target": "Package",
+              "version": "[2.1.7, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>TilePrefetch</AssemblyName>
+    <RootNamespace>TilePrefetch</RootNamespace>
+  </PropertyGroup>
+
+  <!-- 앱과 동일한 GMap.NET 2.1.7 → 동일한 캐시 포맷/위치(%LOCALAPPDATA%\GMap.NET)에 기록 -->
+  <ItemGroup>
+    <PackageReference Include="GMap.NET.WinPresentation" Version="2.1.7" />
+  </ItemGroup>
+
+</Project>

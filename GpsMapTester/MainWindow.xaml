@@ -1,0 +1,12 @@
+﻿<dx:ThemedWindow 
+    x:Class="GpsMapTester.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:Views="clr-namespace:GpsMapTester.Views"
+    Title="GPS Map Tester · BU-353N" Height="820" Width="1180"
+    WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Views:MainView/>
+    </Grid>
+</dx:ThemedWindow>

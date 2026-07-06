@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZOOMwSx+urDAu1d2v7LZzmab50K5gVjOKno2qrYg+u7icc+F2a5lAl5ryAtxsEhcJFucjktQILTU2Y3/t/m/EA==",
+  "success": true,
+  "projectFilePath": "C:\\Project\\4. GPS\\GpsMapTester\\GpsMapTester\\GpsMapTester.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.data\\23.1.5\\devexpress.data.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.data.desktop\\23.1.5\\devexpress.data.desktop.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.drawing\\23.1.5\\devexpress.drawing.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.images\\23.1.5\\devexpress.images.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.mvvm\\23.1.5\\devexpress.mvvm.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.pdf.core\\23.1.5\\devexpress.pdf.core.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.pdf.drawing\\23.1.5\\devexpress.pdf.drawing.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.printing.core\\23.1.5\\devexpress.printing.core.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.wpf.core\\23.1.5\\devexpress.wpf.core.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.wpf.themes.office2019colorful\\23.1.5\\devexpress.wpf.themes.office2019colorful.23.1.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages\\devexpress.wpf.themeslw\\23.1.5\\devexpress.wpf.themeslw.23.1.5.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\gmap.net.core\\2.1.7\\gmap.net.core.2.1.7.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\gmap.net.winpresentation\\2.1.7\\gmap.net.winpresentation.2.1.7.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\stub.system.data.sqlite.core.netframework\\1.0.115.5\\stub.system.data.sqlite.core.netframework.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\system.data.sqlite\\1.0.115.5\\system.data.sqlite.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.115.5\\system.data.sqlite.ef6.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\system.data.sqlite.linq\\1.0.115.5\\system.data.sqlite.linq.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\klmon\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

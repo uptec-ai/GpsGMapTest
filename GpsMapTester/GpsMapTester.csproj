@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>GpsMapTester</RootNamespace>
+    <AssemblyName>GpsMapTester</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <Platforms>AnyCPU;x64</Platforms>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
+  </PropertyGroup>
+
+  <!-- DevExpress WPF (23.1.5, local feed) -->
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Wpf.Core" Version="23.1.5" />
+    <PackageReference Include="DevExpress.Wpf.ThemesLW" Version="23.1.5" />
+    <PackageReference Include="DevExpress.Images" Version="23.1.5" />
+    <PackageReference Include="DevExpress.Mvvm" Version="23.1.5" />
+  </ItemGroup>
+
+  <!-- GMap.NET WPF (2.1.7) : OSM raster tiles + SQLite tile cache.
+       패키지 ID는 2.x부터 WinPresentation, 어셈블리/네임스페이스는 GMap.NET.WindowsPresentation. -->
+  <ItemGroup>
+    <PackageReference Include="GMap.NET.WinPresentation" Version="2.1.7" />
+  </ItemGroup>
+
+  <!-- .NET Framework 에서는 System.IO.Ports.SerialPort 가 기본 참조 System.dll 에 포함되어
+       별도 참조가 필요 없습니다. (별도 System.IO.Ports.dll 은 .NET Core 전용) -->
+
+</Project>
