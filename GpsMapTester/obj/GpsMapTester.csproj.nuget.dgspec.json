@@ -13,6 +13,7 @@
         "packagesPath": "C:\\Users\\klmon\\.nuget\\packages\\",
         "outputPath": "C:\\Project\\4. GPS\\GpsMapTester\\GpsMapTester\\obj\\",
         "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
           "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
@@ -37,19 +38,12 @@
         },
         "frameworks": {
           "net48": {
-            "targetAlias": "net48",
             "projectReferences": {}
           }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
         }
       },
       "frameworks": {
         "net48": {
-          "targetAlias": "net48",
           "dependencies": {
             "DevExpress.Images": {
               "target": "Package",
@@ -71,12 +65,17 @@
               "target": "Package",
               "version": "[2.1.7, )"
             }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          }
         }
       },
       "runtimes": {
-        "win7-x86": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
           "#import": []
         }
       }

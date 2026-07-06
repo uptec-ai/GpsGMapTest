@@ -281,7 +281,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.8/win7-x86": {
+    ".NETFramework,Version=v4.8/win": {
       "DevExpress.Data/23.1.5": {
         "type": "package",
         "compile": {
@@ -542,6 +542,534 @@
         },
         "runtime": {
           "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x64": {
+      "DevExpress.Data/23.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net452/DevExpress.Data.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Data.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Data.Desktop/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Data.Desktop.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Data.Desktop.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Drawing/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Drawing.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Drawing.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Images/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Images.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Images.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Mvvm/23.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net452/DevExpress.Mvvm.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Mvvm.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Pdf.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Pdf.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Pdf.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Pdf.Drawing/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Pdf.v23.1.Drawing.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Pdf.v23.1.Drawing.dll": {}
+        }
+      },
+      "DevExpress.Printing.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Pdf.Drawing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Printing.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Printing.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Themes.Office2019Colorful": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Core.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Core.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Themes.Office2019Colorful/23.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Themes.Office2019Colorful.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Themes.Office2019Colorful.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.ThemesLW/23.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net452/DevExpress.Xpf.ThemesLW.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.ThemesLW.v23.1.dll": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "GMap.NET.Core/2.1.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Data.SQLite": "1.0.115.5",
+          "System.Data.SqlClient": "4.8.3",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "lib/net48/GMap.NET.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net48/GMap.NET.Core.dll": {}
+        }
+      },
+      "GMap.NET.WinPresentation/2.1.7": {
+        "type": "package",
+        "dependencies": {
+          "GMap.NET.Core": "2.1.7"
+        },
+        "compile": {
+          "lib/net48/GMap.NET.WindowsPresentation.dll": {}
+        },
+        "runtime": {
+          "lib/net48/GMap.NET.WindowsPresentation.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Stub.System.Data.SQLite.Core.NetFramework/1.0.115.5": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "build": {
+          "buildTransitive/net46/Stub.System.Data.SQLite.Core.NetFramework.targets": {}
+        }
+      },
+      "System.Data.SqlClient/4.8.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Data.SqlClient.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Data.SqlClient.dll": {}
+        }
+      },
+      "System.Data.SQLite/1.0.115.5": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.SQLite.Core": "[1.0.115.5]",
+          "System.Data.SQLite.EF6": "[1.0.115.5]",
+          "System.Data.SQLite.Linq": "[1.0.115.5]"
+        }
+      },
+      "System.Data.SQLite.Core/1.0.115.5": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.115.5]"
+        }
+      },
+      "System.Data.SQLite.EF6/1.0.115.5": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        }
+      },
+      "System.Data.SQLite.Linq/1.0.115.5": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "DevExpress.Data/23.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net452/DevExpress.Data.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Data.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Data.Desktop/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Data.Desktop.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Data.Desktop.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Drawing/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Drawing.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Drawing.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Images/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Images.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Images.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Mvvm/23.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net452/DevExpress.Mvvm.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Mvvm.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Pdf.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Pdf.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Pdf.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Pdf.Drawing/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Pdf.v23.1.Drawing.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Pdf.v23.1.Drawing.dll": {}
+        }
+      },
+      "DevExpress.Printing.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Pdf.Drawing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Printing.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Printing.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Themes.Office2019Colorful": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Core.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Core.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Themes.Office2019Colorful/23.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Themes.Office2019Colorful.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Themes.Office2019Colorful.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.ThemesLW/23.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net452/DevExpress.Xpf.ThemesLW.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.ThemesLW.v23.1.dll": {}
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "GMap.NET.Core/2.1.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Data.SQLite": "1.0.115.5",
+          "System.Data.SqlClient": "4.8.3",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "lib/net48/GMap.NET.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net48/GMap.NET.Core.dll": {}
+        }
+      },
+      "GMap.NET.WinPresentation/2.1.7": {
+        "type": "package",
+        "dependencies": {
+          "GMap.NET.Core": "2.1.7"
+        },
+        "compile": {
+          "lib/net48/GMap.NET.WindowsPresentation.dll": {}
+        },
+        "runtime": {
+          "lib/net48/GMap.NET.WindowsPresentation.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Stub.System.Data.SQLite.Core.NetFramework/1.0.115.5": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.dll": {}
+        },
+        "build": {
+          "buildTransitive/net46/Stub.System.Data.SQLite.Core.NetFramework.targets": {}
+        }
+      },
+      "System.Data.SqlClient/4.8.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Data.SqlClient.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Data.SqlClient.dll": {}
+        }
+      },
+      "System.Data.SQLite/1.0.115.5": {
+        "type": "package",
+        "dependencies": {
+          "System.Data.SQLite.Core": "[1.0.115.5]",
+          "System.Data.SQLite.EF6": "[1.0.115.5]",
+          "System.Data.SQLite.Linq": "[1.0.115.5]"
+        }
+      },
+      "System.Data.SQLite.Core/1.0.115.5": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.115.5]"
+        }
+      },
+      "System.Data.SQLite.EF6/1.0.115.5": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.EF6.dll": {}
+        }
+      },
+      "System.Data.SQLite.Linq/1.0.115.5": {
+        "type": "package",
+        "compile": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
         }
       }
     }
@@ -1166,6 +1694,7 @@
       "packagesPath": "C:\\Users\\klmon\\.nuget\\packages\\",
       "outputPath": "C:\\Project\\4. GPS\\GpsMapTester\\GpsMapTester\\obj\\",
       "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages",
         "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
@@ -1190,19 +1719,12 @@
       },
       "frameworks": {
         "net48": {
-          "targetAlias": "net48",
           "projectReferences": {}
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {
       "net48": {
-        "targetAlias": "net48",
         "dependencies": {
           "DevExpress.Images": {
             "target": "Package",
@@ -1224,12 +1746,17 @@
             "target": "Package",
             "version": "[2.1.7, )"
           }
-        },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
       }
     },
     "runtimes": {
-      "win7-x86": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
         "#import": []
       }
     }
