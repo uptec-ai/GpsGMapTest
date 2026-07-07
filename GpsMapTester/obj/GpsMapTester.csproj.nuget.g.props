@@ -26,5 +26,12 @@
     <PkgSystem_Data_SQLite_EF6 Condition=" '$(PkgSystem_Data_SQLite_EF6)' == '' ">C:\Users\klmon\.nuget\packages\system.data.sqlite.ef6\1.0.115.5</PkgSystem_Data_SQLite_EF6>
     <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.data\23.1.5</PkgDevExpress_Data>
     <PkgDevExpress_Wpf_Core Condition=" '$(PkgDevExpress_Wpf_Core)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.core\23.1.5</PkgDevExpress_Wpf_Core>
+    <PkgDevExpress_Wpf_Ribbon Condition=" '$(PkgDevExpress_Wpf_Ribbon)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.ribbon\23.1.5</PkgDevExpress_Wpf_Ribbon>
+    <PkgDevExpress_Wpf_LayoutControl Condition=" '$(PkgDevExpress_Wpf_LayoutControl)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.layoutcontrol\23.1.5</PkgDevExpress_Wpf_LayoutControl>
+    <PkgDevExpress_Wpf_Grid_Core Condition=" '$(PkgDevExpress_Wpf_Grid_Core)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.grid.core\23.1.5</PkgDevExpress_Wpf_Grid_Core>
+    <PkgDevExpress_Wpf_DocumentViewer_Core Condition=" '$(PkgDevExpress_Wpf_DocumentViewer_Core)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.documentviewer.core\23.1.5</PkgDevExpress_Wpf_DocumentViewer_Core>
+    <PkgDevExpress_Wpf_Docking Condition=" '$(PkgDevExpress_Wpf_Docking)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.docking\23.1.5</PkgDevExpress_Wpf_Docking>
+    <PkgDevExpress_Wpf_Printing Condition=" '$(PkgDevExpress_Wpf_Printing)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.printing\23.1.5</PkgDevExpress_Wpf_Printing>
+    <PkgDevExpress_Wpf_Map Condition=" '$(PkgDevExpress_Wpf_Map)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.wpf.map\23.1.5</PkgDevExpress_Wpf_Map>
   </PropertyGroup>
 </Project>

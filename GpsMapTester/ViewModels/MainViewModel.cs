@@ -29,9 +29,9 @@ namespace GpsMapTester.ViewModels
 
         private readonly GpsAutoConnectService _gps;
 
-        // 역지오코딩 훅: 기본은 no-op(좌표 표시).
-        // 온라인 시/군/구 명칭이 필요하면 아래를 new NominatimReverseGeocoder() 로 교체.
-        private readonly IReverseGeocoder _geocoder = new NullReverseGeocoder();
+        // 좌표 → 시/도/군(한글) 오프라인 조회 (KOSTAT 시군구 GeoJSON point-in-polygon).
+        // 미로드/미매칭 시 좌표로 폴백. (온라인 명칭 원하면 NominatimReverseGeocoder 로 교체 가능)
+        private readonly IReverseGeocoder _geocoder = new KoreaRegionLookup();
 
         private readonly Dispatcher _ui;
         private double _lastGeocodedLat, _lastGeocodedLng;
@@ -61,7 +61,11 @@ namespace GpsMapTester.ViewModels
         }
 
         /// <summary>백그라운드 자동 연결 시작. (뷰 Loaded 에서 호출; 디자인타임에는 호출 금지)</summary>
-        public void Start() => _gps.Start();
+        public void Start()
+        {
+            UpdateRegionLabel(CenterLatitude, CenterLongitude); // 기본 중심(서울시청)도 시/도/군 표시
+            _gps.Start();
+        }
 
         // ─── 바인딩 속성 ──────────────────────────────────────────────────
         /// <summary>연결 상태(enum) — 색상/트리거 바인딩용</summary>

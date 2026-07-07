@@ -31,3 +31,4 @@ C:\Project\4. GPS\GpsMapTester\tools\TilePrefetch\obj\Release\net8.0-windows\ref
 C:\Project\4. GPS\GpsMapTester\tools\TilePrefetch\obj\Release\net8.0-windows\TilePrefetch.pdb
 C:\Project\4. GPS\GpsMapTester\tools\TilePrefetch\obj\Release\net8.0-windows\TilePrefetch.genruntimeconfig.cache
 C:\Project\4. GPS\GpsMapTester\tools\TilePrefetch\obj\Release\net8.0-windows\ref\TilePrefetch.dll
+C:\Project\4. GPS\GpsMapTester\tools\TilePrefetch\obj\Release\net8.0-windows\TilePrefetch.sourcelink.json

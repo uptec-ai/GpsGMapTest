@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TilePrefetch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfc2ff19abdf324c02641b7bab86cb82ba9a937a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TilePrefetch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TilePrefetch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

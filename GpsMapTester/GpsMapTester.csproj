@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -19,7 +18,6 @@
     <!-- DevExpress/GMap XAML 타입이 마크업 컴파일 시 참조되도록 PackageReference 어셈블리 포함 -->
     <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -31,7 +29,6 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
@@ -42,7 +39,6 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-
   <!-- .NET Framework 참조 (SerialPort 는 System.dll 에 포함) -->
   <ItemGroup>
     <Reference Include="System" />
@@ -52,6 +48,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Configuration" />
     <!-- WPF -->
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -60,7 +57,6 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
   </ItemGroup>
-
   <!-- NuGet 패키지 (PackageReference: DevExpress 23.1 로컬 피드 / GMap.NET nuget) -->
   <ItemGroup>
     <PackageReference Include="DevExpress.Wpf.Core">
@@ -75,11 +71,19 @@
     <PackageReference Include="DevExpress.Mvvm">
       <Version>23.1.5</Version>
     </PackageReference>
+    <PackageReference Include="DevExpress.Wpf.Map">
+      <Version>23.1.5</Version>
+    </PackageReference>
+    <PackageReference Include="GMap.NET.Core">
+      <Version>2.1.7</Version>
+    </PackageReference>
     <PackageReference Include="GMap.NET.WinPresentation">
       <Version>2.1.7</Version>
     </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>1.0.115.5</Version>
+    </PackageReference>
   </ItemGroup>
-
   <!-- WPF 애플리케이션 정의 + 페이지 -->
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -98,6 +102,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MapPrototypeWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="MapPrototypeWindow.xaml.cs">
+      <DependentUpon>MapPrototypeWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Page Include="Views\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -107,7 +119,6 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
-
   <!-- 일반 코드 -->
   <ItemGroup>
     <Compile Include="Models\GpsData.cs" />
@@ -116,13 +127,28 @@
     <Compile Include="Services\GpsService.cs" />
     <Compile Include="Services\GpsAutoConnectService.cs" />
     <Compile Include="Services\IReverseGeocoder.cs" />
+    <Compile Include="Services\LocalMBTilesProvider.cs" />
+    <Compile Include="Services\KoreaRegionLookup.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-
+  <!-- 오프라인 지도 타일: 빌드 시 출력폴더(bin\...\Maps)로 복사되어 Rebuild/배포에도 유지.
+       실제 한국 타일을 만들면 이 파일을 교체(또는 App.config MBTilesPath로 대용량은 외부 지정). -->
+  <ItemGroup>
+    <Content Include="Maps\tiles.mbtiles">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- DevExpress Map 프로토타입용 오프라인 벡터(Shapefile: 시도/시군구) -->
+    <Content Include="Maps\shp\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- 시군구 한글명 GeoJSON (lat/lng → 시/도/군 오프라인 point-in-polygon) -->
+    <Content Include="Maps\skorea_muni.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

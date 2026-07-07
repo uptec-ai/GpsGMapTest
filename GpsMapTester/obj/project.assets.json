@@ -49,6 +49,20 @@
           "lib/net452/DevExpress.Images.v23.1.dll": {}
         }
       },
+      "DevExpress.Map.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Map.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Map.v23.1.Core.dll": {}
+        }
+      },
       "DevExpress.Mvvm/23.1.5": {
         "type": "package",
         "compile": {
@@ -56,6 +70,21 @@
         },
         "runtime": {
           "lib/net452/DevExpress.Mvvm.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Office.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Office.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Office.v23.1.Core.dll": {}
         }
       },
       "DevExpress.Pdf.Core/23.1.5": {
@@ -100,6 +129,22 @@
           "lib/net452/DevExpress.Printing.v23.1.Core.dll": {}
         }
       },
+      "DevExpress.RichEdit.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Office.Core": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.RichEdit.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.RichEdit.v23.1.Core.dll": {}
+        }
+      },
       "DevExpress.Wpf.Core/23.1.5": {
         "type": "package",
         "dependencies": {
@@ -116,6 +161,129 @@
         },
         "runtime": {
           "lib/net452/DevExpress.Xpf.Core.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Docking/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Docking.v23.1.dll": {},
+          "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Docking.v23.1.dll": {},
+          "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.DocumentViewer.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Grid.Core": "[23.1.5]",
+          "DevExpress.Wpf.Ribbon": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Grid.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.LayoutControl/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Map/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Map.Core": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Printing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Map.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Map.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Printing/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Office.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.RichEdit.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Docking": "[23.1.5]",
+          "DevExpress.Wpf.DocumentViewer.Core": "[23.1.5]",
+          "DevExpress.Wpf.LayoutControl": "[23.1.5]",
+          "DevExpress.Wpf.Ribbon": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Printing.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Printing.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Ribbon/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Ribbon.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Ribbon.v23.1.dll": {}
         }
       },
       "DevExpress.Wpf.Themes.Office2019Colorful/23.1.5": {
@@ -329,6 +497,20 @@
           "lib/net452/DevExpress.Images.v23.1.dll": {}
         }
       },
+      "DevExpress.Map.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Map.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Map.v23.1.Core.dll": {}
+        }
+      },
       "DevExpress.Mvvm/23.1.5": {
         "type": "package",
         "compile": {
@@ -336,6 +518,21 @@
         },
         "runtime": {
           "lib/net452/DevExpress.Mvvm.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Office.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Office.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Office.v23.1.Core.dll": {}
         }
       },
       "DevExpress.Pdf.Core/23.1.5": {
@@ -380,6 +577,22 @@
           "lib/net452/DevExpress.Printing.v23.1.Core.dll": {}
         }
       },
+      "DevExpress.RichEdit.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Office.Core": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.RichEdit.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.RichEdit.v23.1.Core.dll": {}
+        }
+      },
       "DevExpress.Wpf.Core/23.1.5": {
         "type": "package",
         "dependencies": {
@@ -396,6 +609,129 @@
         },
         "runtime": {
           "lib/net452/DevExpress.Xpf.Core.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Docking/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Docking.v23.1.dll": {},
+          "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Docking.v23.1.dll": {},
+          "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.DocumentViewer.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Grid.Core": "[23.1.5]",
+          "DevExpress.Wpf.Ribbon": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Grid.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.LayoutControl/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Map/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Map.Core": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Printing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Map.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Map.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Printing/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Office.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.RichEdit.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Docking": "[23.1.5]",
+          "DevExpress.Wpf.DocumentViewer.Core": "[23.1.5]",
+          "DevExpress.Wpf.LayoutControl": "[23.1.5]",
+          "DevExpress.Wpf.Ribbon": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Printing.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Printing.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Ribbon/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Ribbon.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Ribbon.v23.1.dll": {}
         }
       },
       "DevExpress.Wpf.Themes.Office2019Colorful/23.1.5": {
@@ -593,6 +929,20 @@
           "lib/net452/DevExpress.Images.v23.1.dll": {}
         }
       },
+      "DevExpress.Map.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Map.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Map.v23.1.Core.dll": {}
+        }
+      },
       "DevExpress.Mvvm/23.1.5": {
         "type": "package",
         "compile": {
@@ -600,6 +950,21 @@
         },
         "runtime": {
           "lib/net452/DevExpress.Mvvm.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Office.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Office.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Office.v23.1.Core.dll": {}
         }
       },
       "DevExpress.Pdf.Core/23.1.5": {
@@ -644,6 +1009,22 @@
           "lib/net452/DevExpress.Printing.v23.1.Core.dll": {}
         }
       },
+      "DevExpress.RichEdit.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Office.Core": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.RichEdit.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.RichEdit.v23.1.Core.dll": {}
+        }
+      },
       "DevExpress.Wpf.Core/23.1.5": {
         "type": "package",
         "dependencies": {
@@ -660,6 +1041,129 @@
         },
         "runtime": {
           "lib/net452/DevExpress.Xpf.Core.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Docking/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Docking.v23.1.dll": {},
+          "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Docking.v23.1.dll": {},
+          "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.DocumentViewer.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Grid.Core": "[23.1.5]",
+          "DevExpress.Wpf.Ribbon": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Grid.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.LayoutControl/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Map/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Map.Core": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Printing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Map.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Map.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Printing/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Office.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.RichEdit.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Docking": "[23.1.5]",
+          "DevExpress.Wpf.DocumentViewer.Core": "[23.1.5]",
+          "DevExpress.Wpf.LayoutControl": "[23.1.5]",
+          "DevExpress.Wpf.Ribbon": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Printing.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Printing.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Ribbon/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Ribbon.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Ribbon.v23.1.dll": {}
         }
       },
       "DevExpress.Wpf.Themes.Office2019Colorful/23.1.5": {
@@ -857,6 +1361,20 @@
           "lib/net452/DevExpress.Images.v23.1.dll": {}
         }
       },
+      "DevExpress.Map.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Map.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Map.v23.1.Core.dll": {}
+        }
+      },
       "DevExpress.Mvvm/23.1.5": {
         "type": "package",
         "compile": {
@@ -864,6 +1382,21 @@
         },
         "runtime": {
           "lib/net452/DevExpress.Mvvm.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Office.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Office.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Office.v23.1.Core.dll": {}
         }
       },
       "DevExpress.Pdf.Core/23.1.5": {
@@ -908,6 +1441,22 @@
           "lib/net452/DevExpress.Printing.v23.1.Core.dll": {}
         }
       },
+      "DevExpress.RichEdit.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Office.Core": "[23.1.5]",
+          "DevExpress.Pdf.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.RichEdit.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.RichEdit.v23.1.Core.dll": {}
+        }
+      },
       "DevExpress.Wpf.Core/23.1.5": {
         "type": "package",
         "dependencies": {
@@ -924,6 +1473,129 @@
         },
         "runtime": {
           "lib/net452/DevExpress.Xpf.Core.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Docking/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Docking.v23.1.dll": {},
+          "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Docking.v23.1.dll": {},
+          "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.DocumentViewer.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Grid.Core": "[23.1.5]",
+          "DevExpress.Wpf.Ribbon": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Grid.Core/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.dll": {},
+          "lib/net452/DevExpress.Xpf.Grid.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.LayoutControl/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Map/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Map.Core": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Printing": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Map.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Map.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Printing/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Drawing": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Office.Core": "[23.1.5]",
+          "DevExpress.Printing.Core": "[23.1.5]",
+          "DevExpress.RichEdit.Core": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]",
+          "DevExpress.Wpf.Docking": "[23.1.5]",
+          "DevExpress.Wpf.DocumentViewer.Core": "[23.1.5]",
+          "DevExpress.Wpf.LayoutControl": "[23.1.5]",
+          "DevExpress.Wpf.Ribbon": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Printing.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Printing.v23.1.dll": {}
+        }
+      },
+      "DevExpress.Wpf.Ribbon/23.1.5": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[23.1.5]",
+          "DevExpress.Data.Desktop": "[23.1.5]",
+          "DevExpress.Mvvm": "[23.1.5]",
+          "DevExpress.Wpf.Core": "[23.1.5]"
+        },
+        "compile": {
+          "lib/net452/DevExpress.Xpf.Ribbon.v23.1.dll": {}
+        },
+        "runtime": {
+          "lib/net452/DevExpress.Xpf.Ribbon.v23.1.dll": {}
         }
       },
       "DevExpress.Wpf.Themes.Office2019Colorful/23.1.5": {
@@ -1136,6 +1808,21 @@
         "lib/netstandard2.0/DevExpress.Images.v23.1.dll"
       ]
     },
+    "DevExpress.Map.Core/23.1.5": {
+      "sha512": "foBuO4PhsllHKRMbZlQKNfiapbOV7wTsLxGvTLoK7CXPkGnjT0mTl8lDfl8bM3JP8lNLu2VGZJuFomZEK9m9+w==",
+      "type": "package",
+      "path": "devexpress.map.core/23.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.map.core.23.1.5.nupkg.sha512",
+        "devexpress.map.core.nuspec",
+        "lib/net452/DevExpress.Map.v23.1.Core.dll",
+        "lib/net452/DevExpress.Map.v23.1.Core.xml",
+        "lib/netstandard2.0/DevExpress.Map.v23.1.Core.dll",
+        "lib/netstandard2.0/DevExpress.Map.v23.1.Core.xml"
+      ]
+    },
     "DevExpress.Mvvm/23.1.5": {
       "sha512": "4nq3bkRkVRVj1Ym9Ft5UcUtCMRlgHcS0JDQ52UOiJ+JXvvudGN6mXJUtDlrwV0xZPoctJ5iC2HjOMDpVyy+1+Q==",
       "type": "package",
@@ -1149,6 +1836,21 @@
         "lib/net452/DevExpress.Mvvm.v23.1.xml",
         "lib/net6.0-windows/DevExpress.Mvvm.v23.1.dll",
         "lib/net6.0-windows/DevExpress.Mvvm.v23.1.xml"
+      ]
+    },
+    "DevExpress.Office.Core/23.1.5": {
+      "sha512": "Km4+e9LVesj03yXEbEwDY3mTdPO+N17di9+J/f2kDMlh5V65ZCMtU1MplvULe6s0pdJwYJJvCsth6fSnyjFKLw==",
+      "type": "package",
+      "path": "devexpress.office.core/23.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.office.core.23.1.5.nupkg.sha512",
+        "devexpress.office.core.nuspec",
+        "lib/net452/DevExpress.Office.v23.1.Core.dll",
+        "lib/net452/DevExpress.Office.v23.1.Core.xml",
+        "lib/netstandard2.0/DevExpress.Office.v23.1.Core.dll",
+        "lib/netstandard2.0/DevExpress.Office.v23.1.Core.xml"
       ]
     },
     "DevExpress.Pdf.Core/23.1.5": {
@@ -1196,6 +1898,21 @@
         "lib/netstandard2.0/DevExpress.Printing.v23.1.Core.xml"
       ]
     },
+    "DevExpress.RichEdit.Core/23.1.5": {
+      "sha512": "uBnvT0wIRwiyQJVdE3OEe3pWJSllqvwQk1d6Yj35ciLxT+VJke9nJo6pbs2JLzyQhNMYcfvmD6q1T7SU3LcKAw==",
+      "type": "package",
+      "path": "devexpress.richedit.core/23.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.richedit.core.23.1.5.nupkg.sha512",
+        "devexpress.richedit.core.nuspec",
+        "lib/net452/DevExpress.RichEdit.v23.1.Core.dll",
+        "lib/net452/DevExpress.RichEdit.v23.1.Core.xml",
+        "lib/netstandard2.0/DevExpress.RichEdit.v23.1.Core.dll",
+        "lib/netstandard2.0/DevExpress.RichEdit.v23.1.Core.xml"
+      ]
+    },
     "DevExpress.Wpf.Core/23.1.5": {
       "sha512": "gQwD9yCuT33kWc7BYAb0nII65tgAbL3GhvPLZgguNlqh3MiGqQRsXQf//Vy5ojcdLWdJa6EQ2Y1ZlwZ8EWYWMQ==",
       "type": "package",
@@ -1230,6 +1947,168 @@
         "lib/net6.0-windows/Design/Server/DesignerRunner.runtimeconfig.json",
         "lib/net6.0-windows/DevExpress.Xpf.Core.v23.1.dll",
         "lib/net6.0-windows/DevExpress.Xpf.Core.v23.1.xml",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "DevExpress.Wpf.Docking/23.1.5": {
+      "sha512": "00E2TxWoxkMWt2EqjOEaptOqsatsq3c8lkC4upir+GEgpDttfjy0qkBY70vMhHeZeQ3rYsAgNNs1Z1W3eiYabQ==",
+      "type": "package",
+      "path": "devexpress.wpf.docking/23.1.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.wpf.docking.23.1.5.nupkg.sha512",
+        "devexpress.wpf.docking.nuspec",
+        "lib/net452/Design/DevExpress.Xpf.Docking.v23.1.Design.dll",
+        "lib/net452/Design/DevExpress.Xpf.Docking.v23.1.DesignTools.dll",
+        "lib/net452/Design/DevExpress.Xpf.Docking.v23.1.DesignTools.v16.10.dll",
+        "lib/net452/DevExpress.Xpf.Docking.v23.1.dll",
+        "lib/net452/DevExpress.Xpf.Docking.v23.1.xml",
+        "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.dll",
+        "lib/net452/DevExpress.Xpf.Layout.v23.1.Core.xml",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.Docking.v23.1.DesignTools.dll",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.Docking.v23.1.DesignTools.v16.10.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Docking.v23.1.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Docking.v23.1.xml",
+        "lib/net6.0-windows/DevExpress.Xpf.Layout.v23.1.Core.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Layout.v23.1.Core.xml",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "DevExpress.Wpf.DocumentViewer.Core/23.1.5": {
+      "sha512": "j24RXQRREMdQmC/KFDcdKRhGirB5+zbe0r7us9LoruA02IRkdZrOjQw4nidyv5G6ArDrTG74LtAqnvcAlXEYcg==",
+      "type": "package",
+      "path": "devexpress.wpf.documentviewer.core/23.1.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.wpf.documentviewer.core.23.1.5.nupkg.sha512",
+        "devexpress.wpf.documentviewer.core.nuspec",
+        "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll",
+        "lib/net452/DevExpress.Xpf.DocumentViewer.v23.1.Core.xml",
+        "lib/net6.0-windows/DevExpress.Xpf.DocumentViewer.v23.1.Core.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.DocumentViewer.v23.1.Core.xml",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "DevExpress.Wpf.Grid.Core/23.1.5": {
+      "sha512": "pLryNZ/Ct/Ntck2iWfueU6+KtvQI9xxodQ8I3jqMygyEo0i5HR2znIv7SYDAS38Z/+qpQPXp8xFwS6/e7M9anQ==",
+      "type": "package",
+      "path": "devexpress.wpf.grid.core/23.1.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.wpf.grid.core.23.1.5.nupkg.sha512",
+        "devexpress.wpf.grid.core.nuspec",
+        "lib/net452/Design/DevExpress.VisualStudioInterop.VS2019.v23.1.dll",
+        "lib/net452/Design/DevExpress.VisualStudioInterop.VS2022.v23.1.dll",
+        "lib/net452/Design/DevExpress.VisualStudioInterop.v23.1.Base.dll",
+        "lib/net452/Design/DevExpress.Xpf.Grid.v23.1.Design.dll",
+        "lib/net452/Design/DevExpress.Xpf.Grid.v23.1.DesignTools.dll",
+        "lib/net452/Design/DevExpress.Xpf.Grid.v23.1.DesignTools.v16.10.dll",
+        "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.dll",
+        "lib/net452/DevExpress.Xpf.Grid.v23.1.Core.xml",
+        "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.dll",
+        "lib/net452/DevExpress.Xpf.Grid.v23.1.Extensions.xml",
+        "lib/net452/DevExpress.Xpf.Grid.v23.1.dll",
+        "lib/net452/DevExpress.Xpf.Grid.v23.1.xml",
+        "lib/net6.0-windows/Design/DevExpress.VisualStudioInterop.VS2019.v23.1.dll",
+        "lib/net6.0-windows/Design/DevExpress.VisualStudioInterop.VS2022.v23.1.dll",
+        "lib/net6.0-windows/Design/DevExpress.VisualStudioInterop.v23.1.Base.dll",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.Grid.v23.1.DesignTools.dll",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.Grid.v23.1.DesignTools.v16.10.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Grid.v23.1.Core.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Grid.v23.1.Core.xml",
+        "lib/net6.0-windows/DevExpress.Xpf.Grid.v23.1.Extensions.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Grid.v23.1.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Grid.v23.1.xml",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "DevExpress.Wpf.LayoutControl/23.1.5": {
+      "sha512": "aJYOh3AEAxaKW6H38dZyrvNZekKAOGguQka98ssIjkKIYiT5lLz2CSI3TycuuC4cvo/ORm6l6q88j9rDiBbnKw==",
+      "type": "package",
+      "path": "devexpress.wpf.layoutcontrol/23.1.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.wpf.layoutcontrol.23.1.5.nupkg.sha512",
+        "devexpress.wpf.layoutcontrol.nuspec",
+        "lib/net452/Design/DevExpress.Xpf.LayoutControl.v23.1.Design.dll",
+        "lib/net452/Design/DevExpress.Xpf.LayoutControl.v23.1.DesignTools.dll",
+        "lib/net452/Design/DevExpress.Xpf.LayoutControl.v23.1.DesignTools.v16.10.dll",
+        "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.dll",
+        "lib/net452/DevExpress.Xpf.LayoutControl.v23.1.xml",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.LayoutControl.v23.1.DesignTools.dll",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.LayoutControl.v23.1.DesignTools.v16.10.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.LayoutControl.v23.1.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.LayoutControl.v23.1.xml",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "DevExpress.Wpf.Map/23.1.5": {
+      "sha512": "CKV1hahogypUwtl7sCJNpaN2kXaPP677giRLjyi1FmrQE+yShTU7htIGZnLHGPlyb38P55gU/wzO3J+Gl13A3w==",
+      "type": "package",
+      "path": "devexpress.wpf.map/23.1.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.wpf.map.23.1.5.nupkg.sha512",
+        "devexpress.wpf.map.nuspec",
+        "lib/net452/Design/DevExpress.Xpf.Map.v23.1.Design.dll",
+        "lib/net452/Design/DevExpress.Xpf.Map.v23.1.DesignTools.dll",
+        "lib/net452/DevExpress.Xpf.Map.v23.1.dll",
+        "lib/net452/DevExpress.Xpf.Map.v23.1.xml",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.Map.v23.1.DesignTools.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Map.v23.1.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Map.v23.1.xml",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "DevExpress.Wpf.Printing/23.1.5": {
+      "sha512": "A6QsZcE5tuG5O+VEE8byW6CwEmsjKKeQ7e5W4FEc3a8pd0TiLL1sM1JF4qsLumpAWr/a5yCZsWbeg7kgCzX52g==",
+      "type": "package",
+      "path": "devexpress.wpf.printing/23.1.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.wpf.printing.23.1.5.nupkg.sha512",
+        "devexpress.wpf.printing.nuspec",
+        "lib/net452/Design/DevExpress.Xpf.Printing.v23.1.Design.dll",
+        "lib/net452/Design/DevExpress.Xpf.Printing.v23.1.DesignTools.dll",
+        "lib/net452/DevExpress.Xpf.Printing.v23.1.dll",
+        "lib/net452/DevExpress.Xpf.Printing.v23.1.xml",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.Printing.v23.1.DesignTools.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Printing.v23.1.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Printing.v23.1.xml",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "DevExpress.Wpf.Ribbon/23.1.5": {
+      "sha512": "Kp/tQl3on+gIJ3L2EP4iUcBonGiySMb+uE9mCNqZUyY9Oa6Sc0oufTB0PV03zjq1tXG7bWJYFrmD4nQLN2KTEw==",
+      "type": "package",
+      "path": "devexpress.wpf.ribbon/23.1.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.wpf.ribbon.23.1.5.nupkg.sha512",
+        "devexpress.wpf.ribbon.nuspec",
+        "lib/net452/Design/DevExpress.Xpf.Ribbon.v23.1.Design.dll",
+        "lib/net452/Design/DevExpress.Xpf.Ribbon.v23.1.DesignTools.dll",
+        "lib/net452/Design/DevExpress.Xpf.Ribbon.v23.1.DesignTools.v16.10.dll",
+        "lib/net452/DevExpress.Xpf.Ribbon.v23.1.dll",
+        "lib/net452/DevExpress.Xpf.Ribbon.v23.1.xml",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.Ribbon.v23.1.DesignTools.dll",
+        "lib/net6.0-windows/Design/DevExpress.Xpf.Ribbon.v23.1.DesignTools.v16.10.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Ribbon.v23.1.dll",
+        "lib/net6.0-windows/DevExpress.Xpf.Ribbon.v23.1.xml",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
@@ -1675,8 +2554,11 @@
       "DevExpress.Images >= 23.1.5",
       "DevExpress.Mvvm >= 23.1.5",
       "DevExpress.Wpf.Core >= 23.1.5",
+      "DevExpress.Wpf.Map >= 23.1.5",
       "DevExpress.Wpf.ThemesLW >= 23.1.5",
-      "GMap.NET.WinPresentation >= 2.1.7"
+      "GMap.NET.Core >= 2.1.7",
+      "GMap.NET.WinPresentation >= 2.1.7",
+      "System.Data.SQLite >= 1.0.115.5"
     ]
   },
   "packageFolders": {
@@ -1738,13 +2620,25 @@
             "target": "Package",
             "version": "[23.1.5, )"
           },
+          "DevExpress.Wpf.Map": {
+            "target": "Package",
+            "version": "[23.1.5, )"
+          },
           "DevExpress.Wpf.ThemesLW": {
             "target": "Package",
             "version": "[23.1.5, )"
           },
+          "GMap.NET.Core": {
+            "target": "Package",
+            "version": "[2.1.7, )"
+          },
           "GMap.NET.WinPresentation": {
             "target": "Package",
             "version": "[2.1.7, )"
+          },
+          "System.Data.SQLite": {
+            "target": "Package",
+            "version": "[1.0.115.5, )"
           }
         }
       }

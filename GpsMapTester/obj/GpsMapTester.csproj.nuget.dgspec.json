@@ -57,13 +57,25 @@
               "target": "Package",
               "version": "[23.1.5, )"
             },
+            "DevExpress.Wpf.Map": {
+              "target": "Package",
+              "version": "[23.1.5, )"
+            },
             "DevExpress.Wpf.ThemesLW": {
               "target": "Package",
               "version": "[23.1.5, )"
             },
+            "GMap.NET.Core": {
+              "target": "Package",
+              "version": "[2.1.7, )"
+            },
             "GMap.NET.WinPresentation": {
               "target": "Package",
               "version": "[2.1.7, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.115.5, )"
             }
           }
         }

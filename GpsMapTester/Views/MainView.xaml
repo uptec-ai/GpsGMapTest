@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:gmap="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+    xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map"
     xmlns:ViewModels="clr-namespace:GpsMapTester.ViewModels"
     mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="1000">
 
@@ -29,13 +29,20 @@
         </Style>
     </UserControl.Resources>
 
-    <Grid>
-        <!-- ─── 지도 (OSM 라스터 타일, follow) ─────────────────────────── -->
-        <gmap:GMapControl x:Name="Map"
-                          MinZoom="3" MaxZoom="20"
-                          MouseWheelZoomEnabled="False"
-                          CanDragMap="False"
-                          Background="#FFE9E5DE"/>
+    <Grid Background="#FFE9E5DE">
+        <!-- ─── DevExpress Map · OSM 래스터 · 배율 12 고정 · follow ─────── -->
+        <dxm:MapControl x:Name="Map" ZoomLevel="12" EnableRotation="False">
+            <dxm:ImageLayer>
+                <dxm:ImageLayer.DataProvider>
+                    <dxm:OpenStreetMapDataProvider/>
+                </dxm:ImageLayer.DataProvider>
+            </dxm:ImageLayer>
+            <dxm:VectorLayer>
+                <dxm:VectorLayer.Data>
+                    <dxm:MapItemStorage x:Name="MarkerStorage"/>
+                </dxm:VectorLayer.Data>
+            </dxm:VectorLayer>
+        </dxm:MapControl>
 
         <!-- ─── 상태 오버레이 (좌상단) ─────────────────────────────────── -->
         <Border HorizontalAlignment="Left" VerticalAlignment="Top"
@@ -46,8 +53,6 @@
                 <DropShadowEffect Color="#000000" BlurRadius="18" ShadowDepth="0" Opacity="0.45"/>
             </Border.Effect>
             <StackPanel MinWidth="260">
-
-                <!-- 연결 상태 -->
                 <StackPanel Orientation="Horizontal">
                     <Ellipse Width="12" Height="12" VerticalAlignment="Center" Margin="0,0,8,0">
                         <Ellipse.Style>
@@ -74,7 +79,6 @@
 
                 <Separator Margin="0,10" Background="#33FFFFFF"/>
 
-                <!-- 좌표 그리드 -->
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -86,27 +90,31 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="0" Grid.Column="0" Text="위도 (Lat)" Style="{StaticResource FieldLabel}"/>
-                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding LatitudeText}" Style="{StaticResource FieldValue}"/>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="지역" Style="{StaticResource FieldLabel}"/>
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding RegionLabel}" Style="{StaticResource FieldValue}" FontFamily="Segoe UI, Malgun Gothic"/>
 
-                    <TextBlock Grid.Row="1" Grid.Column="0" Text="경도 (Lng)" Style="{StaticResource FieldLabel}"/>
-                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding LongitudeText}" Style="{StaticResource FieldValue}"/>
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="위도 (Lat)" Style="{StaticResource FieldLabel}"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding LatitudeText}" Style="{StaticResource FieldValue}"/>
 
-                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Fix" Style="{StaticResource FieldLabel}"/>
-                    <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding FixText}" Style="{StaticResource FieldValue}"/>
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="경도 (Lng)" Style="{StaticResource FieldLabel}"/>
+                    <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding LongitudeText}" Style="{StaticResource FieldValue}"/>
 
-                    <TextBlock Grid.Row="3" Grid.Column="0" Text="위성 수" Style="{StaticResource FieldLabel}"/>
-                    <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding SatelliteCountText}" Style="{StaticResource FieldValue}"/>
+                    <TextBlock Grid.Row="3" Grid.Column="0" Text="Fix" Style="{StaticResource FieldLabel}"/>
+                    <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding FixText}" Style="{StaticResource FieldValue}"/>
 
-                    <TextBlock Grid.Row="4" Grid.Column="0" Text="속도" Style="{StaticResource FieldLabel}"/>
-                    <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding SpeedText}" Style="{StaticResource FieldValue}"/>
+                    <TextBlock Grid.Row="4" Grid.Column="0" Text="위성 수" Style="{StaticResource FieldLabel}"/>
+                    <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding SatelliteCountText}" Style="{StaticResource FieldValue}"/>
+
+                    <TextBlock Grid.Row="5" Grid.Column="0" Text="속도" Style="{StaticResource FieldLabel}"/>
+                    <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding SpeedText}" Style="{StaticResource FieldValue}"/>
                 </Grid>
             </StackPanel>
         </Border>
 
-        <!-- ─── 배율 표시 (우하단) ─────────────────────────────────────── -->
+        <!-- ─── 배율/소스 표시 (우하단) ────────────────────────────────── -->
         <Border HorizontalAlignment="Right" VerticalAlignment="Bottom"
                 Margin="16" Padding="10,5"
                 CornerRadius="6" Background="#E6202429">
