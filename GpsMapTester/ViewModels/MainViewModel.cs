@@ -20,8 +20,8 @@ namespace GpsMapTester.ViewModels
     {
         // ─── 고정 설정 ────────────────────────────────────────────────────
         /// <summary>기본 중심 좌표: 서울시청</summary>
-        public const double DefaultLat = 37.5666;
-        public const double DefaultLng = 126.9784;
+        public const double DefaultLat = 36.467618;
+        public const double DefaultLng = 127.130815;
         /// <summary>지도 고정 배율 (거리 수준)</summary>
         public const int FixedZoom = 15;
         /// <summary>이 거리(m) 이상 이동했을 때만 역지오코딩 재조회</summary>

@@ -129,6 +129,7 @@
     <Compile Include="Services\IReverseGeocoder.cs" />
     <Compile Include="Services\LocalMBTilesProvider.cs" />
     <Compile Include="Services\KoreaRegionLookup.cs" />
+    <Compile Include="Converters\ScaleNegConverter.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

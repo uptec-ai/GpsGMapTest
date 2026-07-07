@@ -17,7 +17,7 @@ namespace GpsMapTester.Views
     {
         private const double FixedZoom = 12;
         private MainViewModel _vm;
-        private MapPushpin _marker;
+        private MapCustomElement _marker;
 
         public MainView()
         {
@@ -53,6 +53,14 @@ namespace GpsMapTester.Views
         // ─── 지도 설정 ───────────────────────────────────────────────────
         private void ConfigureMap()
         {
+            // OSM 래스터 레이어를 코드에서 생성 → VS 디자이너는 이 코드를 실행하지 않으므로
+            // 디자인타임에 OSM 요청/차단 이미지가 뜨지 않는다(런타임에만 타일 로드).
+            // OSM 정책상 유효 User-Agent 필수(없으면 "Access blocked" 반환).
+            var osm = new OpenStreetMapDataProvider();
+            osm.WebRequest += (s, e) =>
+                e.UserAgent = "GpsMapTester/1.0 (gps map tester; contact rnd1@uptec-netzeroai.com)";
+            Map.Layers.Insert(0, new ImageLayer { DataProvider = osm }); // 마커 레이어 아래(바탕)
+
             // 배율 12 고정 + 사용자 조작 잠금(좌표 중앙 고정 follow 전용)
             Map.MinZoomLevel = FixedZoom;
             Map.MaxZoomLevel = FixedZoom;
@@ -64,12 +72,11 @@ namespace GpsMapTester.Views
             var center = new GeoPoint(_vm.CenterLatitude, _vm.CenterLongitude);
             Map.CenterPoint = center;
 
-            _marker = new MapPushpin
+            _marker = new MapCustomElement
             {
-                Location  = center,
-                Text      = _vm.RegionLabel,
-                Brush     = new SolidColorBrush(Color.FromRgb(0xFF, 0x45, 0x3A)),
-                TextBrush = Brushes.White
+                Location        = center,
+                Content         = _vm.RegionLabel,
+                ContentTemplate = (System.Windows.DataTemplate)Resources["MarkerLabelTemplate"]
             };
             MarkerStorage.Items.Add(_marker);
 
@@ -104,7 +111,7 @@ namespace GpsMapTester.Views
         private void ApplyLabel()
         {
             if (_vm != null && _marker != null)
-                _marker.Text = _vm.RegionLabel; // 마커 텍스트 = 시/도/군
+                _marker.Content = _vm.RegionLabel; // 마커 라벨 = 시/도/군
         }
     }
 }

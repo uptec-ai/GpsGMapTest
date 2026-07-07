@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map"
     xmlns:ViewModels="clr-namespace:GpsMapTester.ViewModels"
+    xmlns:conv="clr-namespace:GpsMapTester.Converters"
     mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="1000">
 
     <UserControl.DataContext>
@@ -27,16 +28,40 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="FontFamily" Value="Consolas, Segoe UI"/>
         </Style>
+
+        <conv:ScaleNegConverter x:Key="ScaleNeg"/>
+
+        <!-- 포인트 마커: 라벨(전경색/배경색) + 포인트 점.
+             콘텐츠 하단중앙이 좌표에 오도록 RenderTransform 으로 앵커 보정. -->
+        <DataTemplate x:Key="MarkerLabelTemplate">
+            <Grid x:Name="MarkerRoot">
+                <Grid.RenderTransform>
+                    <TranslateTransform
+                        X="{Binding ActualWidth,  ElementName=MarkerRoot, Converter={StaticResource ScaleNeg}, ConverterParameter=0.5}"
+                        Y="{Binding ActualHeight, ElementName=MarkerRoot, Converter={StaticResource ScaleNeg}, ConverterParameter=1}"/>
+                </Grid.RenderTransform>
+                <StackPanel HorizontalAlignment="Center">
+                    <Border CornerRadius="8" Padding="10,4" HorizontalAlignment="Center"
+                            Background="#F2FFFFFF" BorderBrush="#59000000" BorderThickness="1">
+                        <Border.Effect>
+                            <DropShadowEffect Color="Black" BlurRadius="8" ShadowDepth="0" Opacity="0.4"/>
+                        </Border.Effect>
+                        <TextBlock Text="{Binding}" Foreground="Black" FontWeight="Bold" FontSize="13"
+                                   FontFamily="Malgun Gothic, Segoe UI"/>
+                    </Border>
+                    <Border Height="3"/>
+                    <Ellipse Width="16" Height="16" Fill="#FFC62828" Stroke="White" StrokeThickness="3"
+                             HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
     </UserControl.Resources>
 
     <Grid Background="#FFE9E5DE">
         <!-- ─── DevExpress Map · OSM 래스터 · 배율 12 고정 · follow ─────── -->
+        <!-- OSM 래스터 레이어는 code-behind 에서 생성(디자이너 네트워크 차단 이미지 방지 + UA 설정).
+             마커 저장소만 XAML 에 둔다. -->
         <dxm:MapControl x:Name="Map" ZoomLevel="12" EnableRotation="False">
-            <dxm:ImageLayer>
-                <dxm:ImageLayer.DataProvider>
-                    <dxm:OpenStreetMapDataProvider/>
-                </dxm:ImageLayer.DataProvider>
-            </dxm:ImageLayer>
             <dxm:VectorLayer>
                 <dxm:VectorLayer.Data>
                     <dxm:MapItemStorage x:Name="MarkerStorage"/>
