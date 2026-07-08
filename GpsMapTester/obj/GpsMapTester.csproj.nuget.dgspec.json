@@ -65,17 +65,9 @@
               "target": "Package",
               "version": "[23.1.5, )"
             },
-            "GMap.NET.Core": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[2.1.7, )"
-            },
-            "GMap.NET.WinPresentation": {
-              "target": "Package",
-              "version": "[2.1.7, )"
-            },
-            "System.Data.SQLite": {
-              "target": "Package",
-              "version": "[1.0.115.5, )"
+              "version": "[13.0.1, )"
             }
           }
         }

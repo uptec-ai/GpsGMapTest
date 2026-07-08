@@ -74,14 +74,8 @@
     <PackageReference Include="DevExpress.Wpf.Map">
       <Version>23.1.5</Version>
     </PackageReference>
-    <PackageReference Include="GMap.NET.Core">
-      <Version>2.1.7</Version>
-    </PackageReference>
-    <PackageReference Include="GMap.NET.WinPresentation">
-      <Version>2.1.7</Version>
-    </PackageReference>
-    <PackageReference Include="System.Data.SQLite">
-      <Version>1.0.115.5</Version>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
     </PackageReference>
   </ItemGroup>
   <!-- WPF 애플리케이션 정의 + 페이지 -->
@@ -102,14 +96,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MapPrototypeWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="MapPrototypeWindow.xaml.cs">
-      <DependentUpon>MapPrototypeWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Page Include="Views\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -127,9 +113,9 @@
     <Compile Include="Services\GpsService.cs" />
     <Compile Include="Services\GpsAutoConnectService.cs" />
     <Compile Include="Services\IReverseGeocoder.cs" />
-    <Compile Include="Services\LocalMBTilesProvider.cs" />
     <Compile Include="Services\KoreaRegionLookup.cs" />
     <Compile Include="Converters\ScaleNegConverter.cs" />
+    <Compile Include="Converters\LatLngToGeoConverter.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -139,11 +125,8 @@
   <!-- 오프라인 지도 타일: 빌드 시 출력폴더(bin\...\Maps)로 복사되어 Rebuild/배포에도 유지.
        실제 한국 타일을 만들면 이 파일을 교체(또는 App.config MBTilesPath로 대용량은 외부 지정). -->
   <ItemGroup>
-    <Content Include="Maps\tiles.mbtiles">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <!-- DevExpress Map 프로토타입용 오프라인 벡터(Shapefile: 시도/시군구) -->
-    <Content Include="Maps\shp\*.*">
+    <!-- 오프라인 래스터 타일 폴더(z/x/y png). 빌드 시 출력폴더로 복사. 실제 타일로 교체 가능. -->
+    <Content Include="Maps\tiles\**\*.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <!-- 시군구 한글명 GeoJSON (lat/lng → 시/도/군 오프라인 point-in-polygon) -->

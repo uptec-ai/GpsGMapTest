@@ -30,6 +30,7 @@
         </Style>
 
         <conv:ScaleNegConverter x:Key="ScaleNeg"/>
+        <conv:LatLngToGeoConverter x:Key="LatLngToGeo"/>
 
         <!-- 포인트 마커: 라벨(전경색/배경색) + 포인트 점.
              콘텐츠 하단중앙이 좌표에 오도록 RenderTransform 으로 앵커 보정. -->
@@ -61,7 +62,16 @@
         <!-- ─── DevExpress Map · OSM 래스터 · 배율 12 고정 · follow ─────── -->
         <!-- OSM 래스터 레이어는 code-behind 에서 생성(디자이너 네트워크 차단 이미지 방지 + UA 설정).
              마커 저장소만 XAML 에 둔다. -->
-        <dxm:MapControl x:Name="Map" ZoomLevel="12" EnableRotation="False">
+        <dxm:MapControl x:Name="Map" ZoomLevel="12" EnableRotation="False"
+                        PreviewMouseLeftButtonDown="Map_PreviewMouseLeftButtonDown">
+            <!-- 중심을 VM(CenterLatitude/Longitude)에 바인딩 → 초기값이 렌더 전에 적용되어
+                 (0,0)→목표 팬 애니메이션이 없고, GPS 갱신 시 follow 도 자동 반영. -->
+            <dxm:MapControl.CenterPoint>
+                <MultiBinding Converter="{StaticResource LatLngToGeo}">
+                    <Binding Path="CenterLatitude"/>
+                    <Binding Path="CenterLongitude"/>
+                </MultiBinding>
+            </dxm:MapControl.CenterPoint>
             <dxm:VectorLayer>
                 <dxm:VectorLayer.Data>
                     <dxm:MapItemStorage x:Name="MarkerStorage"/>
@@ -139,11 +149,23 @@
             </StackPanel>
         </Border>
 
-        <!-- ─── 배율/소스 표시 (우하단) ────────────────────────────────── -->
+        <!-- ─── 배율 선택 / 소스 표시 (우하단) ─────────────────────────── -->
         <Border HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                Margin="16" Padding="10,5"
+                Margin="16" Padding="10,6"
                 CornerRadius="6" Background="#E6202429">
-            <TextBlock x:Name="ZoomLabel" Foreground="#CCFFFFFF" FontSize="12"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="배율(Zoom)" Foreground="#CCFFFFFF" FontSize="12"
+                           VerticalAlignment="Center" Margin="0,0,8,0"/>
+                <ComboBox x:Name="ZoomCombo" Width="60" VerticalAlignment="Center"
+                          SelectionChanged="ZoomCombo_SelectionChanged">
+                    <ComboBoxItem Content="15"/>
+                    <ComboBoxItem Content="12"/>
+                    <ComboBoxItem Content="10"/>
+                    <ComboBoxItem Content="8"/>
+                </ComboBox>
+                <TextBlock x:Name="ZoomLabel" Foreground="#CCFFFFFF" FontSize="12"
+                           VerticalAlignment="Center" Margin="10,0,0,0"/>
+            </StackPanel>
         </Border>
     </Grid>
 </UserControl>

@@ -20,8 +20,14 @@ namespace GpsMapTester.ViewModels
     {
         // ─── 고정 설정 ────────────────────────────────────────────────────
         /// <summary>기본 중심 좌표: 서울시청</summary>
-        public const double DefaultLat = 36.467618;
-        public const double DefaultLng = 127.130815;
+        /// 공주 : 36.467618, 127.130815
+        /// 서울 시청 : 37.566611, 126.978211
+        /// 동탄 회사 : 37.207580 127.097743
+        public const double SeoulLat = 37.566611, SeoulLng = 126.978211;
+        public const double DongtanLat = 37.207580, DongtanLng = 127.097743;
+        public const double GongjuLat = 36.467618, GongjuLng = 127.130815;
+        public const double DefaultLat = DongtanLat;
+        public const double DefaultLng = DongtanLng;
         /// <summary>지도 고정 배율 (거리 수준)</summary>
         public const int FixedZoom = 15;
         /// <summary>이 거리(m) 이상 이동했을 때만 역지오코딩 재조회</summary>
